@@ -1,0 +1,55 @@
+h1{
+    text-shadow:
+            3px  3px 0 var(--primary-color),
+            -3px -3px 0 var(--primary-color),
+            3px -3px 0 var(--primary-color),
+            -3px  3px 0 var(--primary-color),
+            3px  3px 0 var(--primary-color),
+            -9.9px 9.9px var(--primary-color);
+    color: white ;
+    font-family: 'Luckiest Guy', cursive;    font-size: 98px;
+    position: relative;
+    animation-name: anim_title;
+    animation-duration: 1.2s;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    text-align: center;
+}
+
+
+h2{
+    text-shadow:
+            3px  3px 0 var(--primary-color),
+            -3px -3px 0 var(--primary-color),
+            3px -3px 0 var(--primary-color),
+            -3px  3px 0 var(--primary-color),
+            3px  3px 0 var(--primary-color),
+            -4.95px 4.95px var(--primary-color);
+    font-family: 'Luckiest Guy', cursive;    color: var(--third-color);
+    position: relative;
+    font-size: 56px;
+    margin-bottom: 10px ;
+    animation-name: anim_soustitle;
+    animation-duration: 0.7s;
+    animation-direction: normal;
+    animation-delay: 2.5s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    text-align: center;
+}
+
+
+
+h6{
+    font-family: 'Luckiest Guy', cursive;
+}
+
+p{
+     font-family: 'Nerko One', cursive;
+
+
+ }

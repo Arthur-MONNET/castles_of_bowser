@@ -1,0 +1,829 @@
+
+
+/*----------------------------------FondMenu____________________________________*/
+
+@keyframes anim_background{
+    0%{
+        opacity: 0;
+        width: 150%;
+        height: 150%;
+    }
+    75%{
+        width: 100%;
+        height: 100%;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/*------------------------------Menu__________________________*/
+
+
+@keyframes anim_title{
+    0%{
+        text-shadow:
+                2px  2px 0 var(--primary-color),
+                -2px -2px 0 var(--primary-color),
+                2px -2px 0 var(--primary-color),
+                -2px  2px 0 var(--primary-color),
+                2px  2px 0 var(--primary-color),
+                0 0 0 var(--primary-color);
+        left: -100vw;
+        top: 9.9px;
+    }
+    41.5%{
+        text-shadow:
+                2px  2px 0 var(--primary-color),
+                -2px -2px 0 var(--primary-color),
+                2px -2px 0 var(--primary-color),
+                -2px  2px 0 var(--primary-color),
+                2px  2px 0 var(--primary-color),
+                0 0 0 var(--primary-color);
+        left: -9.9px;
+        top: 9.9px;
+    }
+    100%{
+        text-shadow:
+                2px  2px 0 var(--primary-color),
+                -2px -2px 0 var(--primary-color),
+                2px -2px 0 var(--primary-color),
+                -2px  2px 0 var(--primary-color),
+                2px  2px 0 var(--primary-color),
+                -9.9px 9.9px 0 var(--primary-color);
+        left: 0;
+        top: 0;
+    }
+}
+@keyframes anim_title2{
+    0%{
+        text-shadow:
+                2px  2px 0 var(--primary-color),
+                -2px -2px 0 var(--primary-color),
+                2px -2px 0 var(--primary-color),
+                -2px  2px 0 var(--primary-color),
+                2px  2px 0 var(--primary-color),
+                0 0 0 var(--primary-color);
+        left: -100vw;
+        top: 1.8vw;
+    }
+    41.5%{
+        text-shadow:
+                2px  2px 0 var(--primary-color),
+                -2px -2px 0 var(--primary-color),
+                2px -2px 0 var(--primary-color),
+                -2px  2px 0 var(--primary-color),
+                2px  2px 0 var(--primary-color),
+                0 0 0 var(--primary-color);
+        left: -1.8vw;
+        top: 1.8vw;
+    }
+    100%{
+        text-shadow:
+                2px  2px 0 var(--primary-color),
+                -2px -2px 0 var(--primary-color),
+                2px -2px 0 var(--primary-color),
+                -2px  2px 0 var(--primary-color),
+                2px  2px 0 var(--primary-color),
+                -1.8vw 1.8vw 0 var(--primary-color);
+        left: 0;
+        top: 0;
+    }
+}
+@keyframes anim_title3{
+    0%{
+        text-shadow:
+                2px  2px 0 var(--primary-color),
+                -2px -2px 0 var(--primary-color),
+                2px -2px 0 var(--primary-color),
+                -2px  2px 0 var(--primary-color),
+                2px  2px 0 var(--primary-color),
+                0 0 0 var(--primary-color);
+        left: -100vw;
+        top: 1.7vh;
+    }
+    41.5%{
+        text-shadow:
+                2px  2px 0 var(--primary-color),
+                -2px -2px 0 var(--primary-color),
+                2px -2px 0 var(--primary-color),
+                -2px  2px 0 var(--primary-color),
+                2px  2px 0 var(--primary-color),
+                0 0 0 var(--primary-color);
+        left: -1.7vh;
+        top: 1.7vh;
+    }
+    100%{
+        text-shadow:
+                2px  2px 0 var(--primary-color),
+                -2px -2px 0 var(--primary-color),
+                2px -2px 0 var(--primary-color),
+                -2px  2px 0 var(--primary-color),
+                2px  2px 0 var(--primary-color),
+                -1.7vh 1.7vh 0 var(--primary-color);
+        left: 0;
+        top: 0;
+    }
+}
+@keyframes anim_soustitle{
+    0% {
+        text-shadow: 2px 2px 0 var(--primary-color),
+        -2px -2px 0 var(--primary-color),
+        2px -2px 0 var(--primary-color),
+        -2px 2px 0 var(--primary-color),
+        2px 2px 0 var(--primary-color),
+        0 0 0 var(--primary-color);
+        left: -100vw;
+        top: 4.95px;
+    }
+    71.5%{
+        text-shadow:
+                2px  2px 0 var(--primary-color),
+                -2px -2px 0 var(--primary-color),
+                2px -2px 0 var(--primary-color),
+                -2px  2px 0 var(--primary-color),
+                2px  2px 0 var(--primary-color),
+                0 0 0 var(--primary-color);
+        left: -4.95px;
+        top: 4.95px;
+    }
+    100%{
+        text-shadow:
+                2px  2px 0 var(--primary-color),
+                -2px -2px 0 var(--primary-color),
+                2px -2px 0 var(--primary-color),
+                -2px  2px 0 var(--primary-color),
+                2px  2px 0 var(--primary-color),
+                -4.95px 4.95px 0 var(--primary-color);
+        left: 0;
+        top: 0;
+    }
+}
+@keyframes anim_soustitle2{
+    0% {
+        text-shadow: 2px 2px 0 var(--primary-color),
+        -2px -2px 0 var(--primary-color),
+        2px -2px 0 var(--primary-color),
+        -2px 2px 0 var(--primary-color),
+        2px 2px 0 var(--primary-color),
+        0 0 0 var(--primary-color);
+        left: -100vw;
+        top: 0.9vw;
+    }
+    71.5%{
+        text-shadow:
+                2px  2px 0 var(--primary-color),
+                -2px -2px 0 var(--primary-color),
+                2px -2px 0 var(--primary-color),
+                -2px  2px 0 var(--primary-color),
+                2px  2px 0 var(--primary-color),
+                0 0 0 var(--primary-color);
+        left: -0.9vw;
+        top: 0.9vw;
+    }
+    100%{
+        text-shadow:
+                2px  2px 0 var(--primary-color),
+                -2px -2px 0 var(--primary-color),
+                2px -2px 0 var(--primary-color),
+                -2px  2px 0 var(--primary-color),
+                2px  2px 0 var(--primary-color),
+                -0.9vw 0.9vw 0 var(--primary-color);
+        left: 0;
+        top: 0;
+    }
+}
+@keyframes anim_soustitle3{
+    0% {
+        text-shadow: 2px 2px 0 var(--primary-color),
+        -2px -2px 0 var(--primary-color),
+        2px -2px 0 var(--primary-color),
+        -2px 2px 0 var(--primary-color),
+        2px 2px 0 var(--primary-color),
+        0 0 0 var(--primary-color);
+        left: -100vw;
+        top: 0.8vh;
+    }
+    71.5%{
+        text-shadow:
+                2px  2px 0 var(--primary-color),
+                -2px -2px 0 var(--primary-color),
+                2px -2px 0 var(--primary-color),
+                -2px  2px 0 var(--primary-color),
+                2px  2px 0 var(--primary-color),
+                0 0 0 var(--primary-color);
+        left: -0.8vh;
+        top: 0.8vh;
+    }
+    100%{
+        text-shadow:
+                2px  2px 0 var(--primary-color),
+                -2px -2px 0 var(--primary-color),
+                2px -2px 0 var(--primary-color),
+                -2px  2px 0 var(--primary-color),
+                2px  2px 0 var(--primary-color),
+                -0.8vh 0.8vh 0 var(--primary-color);
+        left: 0;
+        top: 0;
+    }
+}
+
+@keyframes anim_zoneText{
+    0%{
+        bottom: -100%;
+    }
+    100%{
+        bottom: 0;
+    }
+}
+
+@keyframes anim_borderMouv {
+    0% {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 4%;
+        box-shadow: -300px 0 150px -120px orangered inset;
+    }
+    25% {
+        top: 0;
+        left: 96%;
+        width: 4%;
+        height: 100%;
+        box-shadow: 0 -150px 120px -90px orangered inset;
+    }
+    50% {
+        top: 96%;
+        left: 0;
+        width: 100%;
+        height: 4%;
+        box-shadow: 300px 0 150px -120px orangered inset;
+    }
+    75% {
+        top: 0;
+        left: 0;
+        width: 4%;
+        height: 100%;
+        box-shadow: 0 150px 120px -90px orangered inset;
+    }
+    100% {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 4%;
+        box-shadow: -300px 0 150px -120px orangered inset;
+    }
+}
+
+/*---------------------------------------button________________________________________*/
+
+@keyframes anim_button{
+    0%{
+        transform: scale(0.1,0);
+        margin-top: 4.5vh;
+        background-color: var(--secondary-color);
+        border-radius: 0.5vh;
+        box-shadow: 3px -3px 3px black;
+
+    }
+    5%{
+        margin-top: 4.5vh;
+        transform: scale(0.1,0.1);
+    }
+    50%{
+
+        transform: scale(0.1,0.1);
+        background-color: var(--secondary-color);
+        border-radius: 0.5vh;
+        box-shadow: 3px -3px 3px black;
+    }
+    100%{
+        margin-top: 0.5vh;
+        transform: scale(1,1);
+        background-color: var(--primary-color);
+        border-radius: 0;
+        box-shadow: 0 0 0 black;
+    }
+}
+
+@keyframes anim_backgroundWhite{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 31vw;
+    }
+}
+
+@keyframes anim_colorTextButton{
+    0%{
+        opacity: 1;
+    }
+    25%{
+        opacity: 0;
+        color: white;
+    }
+    25%{
+        opacity: 0;
+        color: var(--primary-color)
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes anim_descriptionButton{
+    0%{
+        width: 0;
+        height: 0;
+    }
+    38%{
+        width: 0;
+        height: 0;
+    }
+    76%{
+        width: 25vw;
+        height: 0;
+    }
+    100%{
+        height: 30%;
+    }
+}
+
+@keyframes anim_descriptionButton2{
+    0%{
+        width: 0;
+        height: 0;
+    }
+    38%{
+        width: 0;
+        height: 0;
+    }
+    76%{
+        width: 25vw;
+        height: 0;
+    }
+    100%{
+        height: 2vw;
+    }
+}
+@keyframes anim_descriptionButton3{
+    0%{
+        width: 0;
+        height: 0;
+    }
+    38%{
+        width: 0;
+        height: 0;
+    }
+    76%{
+        width: 25vw;
+        height: 0;
+    }
+    100%{
+        height: 7vw;
+    }
+}
+
+/*--------------------buttonInTarget____________________________*/
+
+@keyframes anim_opacity {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/*-----------------------------------------chapter________________________________________*/
+
+@keyframes anim_Chapter{
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes anim_descriptionChapter{
+    0%{
+        right: -100vw;
+    }
+    60%{
+        right: -100vw;
+    }
+    100%{
+        right: 0;
+    }
+}
+
+/*-------------------easterEgg_____________________*/
+
+
+
+@keyframes anim_boule_de_feu1{
+    0%{
+        bottom: 50%;
+        left: 10%;
+
+    }
+    5%{
+        bottom: 150vw;
+        left: -40%;
+    }
+    5%{
+        bottom: 50%;
+        left: 10%;
+
+    }
+    10%{
+        bottom: 150vw;
+        left: -40%;
+    }
+    10.001%{
+        bottom: 50%;
+        left: 10%;
+
+    }
+    13%{
+        bottom: 50%;
+        left: 10%;
+
+    }
+    18%{
+        bottom: 150vw;
+        left: -40%;
+    }
+    18.001%{
+        bottom: 50%;
+        left: 10%;
+
+    }
+    20%{
+        bottom: 50%;
+        left: 10%;
+
+    }
+    25%{
+        bottom: 150vw;
+        left: -40%;
+    }
+    25.001%{
+        bottom: 50%;
+        left: 10%;
+
+    }
+    38%{
+        bottom: 50%;
+        left: 10%;
+
+    }
+    43%{
+        bottom: 150vw;
+        left: -40%;
+    }
+    43.001%{
+        bottom: 50%;
+        left: 10%;
+
+    }
+    62%{
+        bottom: 50%;
+        left: 10%;
+
+    }
+    67%{
+        bottom: 150vw;
+        left: -40%;
+    }
+    67.001%{
+        bottom: 50%;
+        left: 10%;
+
+    }
+    75%{
+        bottom: 50%;
+        left: 10%;
+
+    }
+    80%{
+        bottom: 150vw;
+        left: -40%;
+    }
+    80.001%{
+        bottom: 50%;
+        left: 10%;
+
+    }
+    84%{
+        bottom: 50%;
+        left: 10%;
+
+    }
+    89%{
+        bottom: 150vw;
+        left: -40%;
+    }
+    89.001%{
+        bottom: 50%;
+        left: 10%;
+
+    }
+    94%{
+        bottom: 150vw;
+        left: -40%;
+    }
+    94.001%{
+        bottom: 50%;
+        left: 10%;
+
+    }
+}
+
+
+@keyframes anim_boule_de_feu2{
+    0%{
+
+        bottom: 50%;
+        left: 10%;
+    }
+    5%{
+
+        bottom: 50%;
+        left: 10%;
+    }
+    10%{
+        bottom: 150vw;
+    }
+    10.001%{
+        bottom: 50%;
+        left: 10%;
+
+    }
+    17%{
+        bottom: 50%;
+        left: 10%;
+
+    }
+    22%{
+        bottom: 150vw;
+    }
+    22.001%{
+        bottom: 50%;
+        left: 10%;
+
+    }
+    27%{
+        bottom: 150vw;
+    }
+    27.001%{
+        bottom: 50%;
+        left: 10%;
+
+    }
+    35%{
+        bottom: 50%;
+        left: 10%;
+
+    }
+    40%{
+        bottom: 150vw;
+    }
+    40.001%{
+        bottom: 50%;
+        left: 10%;
+
+    }
+    42%{
+        bottom: 50%;
+        left: 10%;
+
+    }
+    47%{
+        bottom: 150vw;
+    }
+    47.001%{
+        bottom: 50%;
+        left: 10%;
+
+    }
+    52%{
+        bottom: 150vw;
+    }
+    52.001%{
+        bottom: 50%;
+        left: 10%;
+
+    }
+    61%{
+        bottom: 50%;
+        left: 10%;
+
+    }
+    66%{
+        bottom: 150vw;
+    }
+    66.001%{
+        bottom: 50%;
+        left: 10%;
+
+    }
+    76%{
+        bottom: 50%;
+        left: 10%;
+
+    }
+    81%{
+        bottom: 150vw;
+    }
+    81.001%{
+        bottom: 50%;
+        left: 10%;
+
+    }
+    83%{
+        bottom: 50%;
+        left: 10%;
+
+    }
+    88%{
+        bottom: 150vw;
+    }
+    88.001%{
+        bottom: 50%;
+        left: 10%;
+
+    }
+    93%{
+        bottom: 150vw;
+    }
+    93.001%{
+        bottom: 50%;
+        left: 10%;
+
+    }
+    94%{
+        bottom: 50%;
+        left: 10%;
+
+    }
+    99%{
+        bottom: 150vw;
+    }
+    99.001%{
+        bottom: 50%;
+        left: 10%;
+
+    }
+}
+
+@keyframes anim_boule_de_feu3 {
+    0% {
+        bottom: 50%;
+        left: 10%;
+
+    }
+    7% {
+        bottom: 50%;
+        left: 10%;
+
+    }
+    12% {
+        bottom: 150vw;
+        left: 50%;
+    }
+    12.001% {
+        bottom: 50%;
+        left: 10%;
+
+    }
+    20% {
+        bottom: 50%;
+        left: 10%;
+    }
+    25% {
+        bottom: 150vw;
+        left: 50%;
+    }
+    25.001% {
+        bottom: 50%;
+        left: 10%;
+
+    }
+    31% {
+        bottom: 50%;
+        left: 10%;
+
+    }
+    36% {
+        bottom: 150vw;
+        left: 50%;
+    }
+    36.001% {
+        bottom: 50%;
+        left: 10%;
+
+    }
+    41% {
+        bottom: 150vw;
+        left: 50%;
+    }
+    41.001% {
+        bottom: 50%;
+        left: 10%;
+
+    }
+    53% {
+        bottom: 50%;
+        left: 10%;
+
+    }
+    58% {
+        bottom: 150vw;
+        left: 50%;
+    }
+    58.001% {
+        bottom: 50%;
+        left: 10%;
+
+    }
+    59% {
+        bottom: 50%;
+        left: 10%;
+
+    }
+    64% {
+        bottom: 150vw;
+        left: 50%;
+    }
+    64.001% {
+        bottom: 50%;
+        left: 10%;
+
+    }
+    68% {
+        bottom: 50%;
+        left: 10%;
+
+    }
+    73% {
+        bottom: 150vw;
+        left: 50%;
+    }
+    73.001% {
+        bottom: 50%;
+        left: 10%;
+
+    }
+    78% {
+        bottom: 150vw;
+        left: 50%;
+    }
+    78.001% {
+        bottom: 50%;
+        left: 10%;
+
+    }
+    86% {
+        bottom: 50%;
+        left: 10%;
+
+    }
+    91% {
+        bottom: 150vw;
+        left: 50%;
+    }
+    91.001% {
+        bottom: 50%;
+        left: 10%;
+
+    }
+    93% {
+        bottom: 150vw;
+        left: 50%;
+    }
+    93.001% {
+        bottom: 50%;
+        left: 10%;
+
+    }
+    94% {
+        bottom: 50%;
+        left: 10%;
+
+    }
+    99% {
+        bottom: 150vw;
+        left: 50%;
+    }
+    99.001% {
+        bottom: 50%;
+        left: 10%;
+
+    }
+}
