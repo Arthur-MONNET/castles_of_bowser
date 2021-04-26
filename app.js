@@ -1,5 +1,5 @@
 document.addEventListener("click",()=>{
     console.log("vibre")
-    window.navigator.vibrate(200);
+    navigator.vibrate(200)
 })
 
